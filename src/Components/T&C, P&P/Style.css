@@ -1,0 +1,19 @@
+.cont{
+    width: 90%;
+    max-width: 1320px;
+    margin: auto;
+}
+.cont h1{
+    margin: 3rem auto 1rem auto;
+    width: fit-content;
+    color: #333;
+}
+.cont h2{
+    margin: 3rem 0 1rem 0;
+    width: fit-content;
+    line-height: 4rem;
+    border-bottom:1px solid #333;
+}
+.cont p{
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,20 @@
+.cont_project {
+    width: 90%;
+    padding: 2rem 0;
+    margin: auto;
+    max-width: 1320px;
+}
+.cont_project .all {
+    background: none;
+    color: #4719AA;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: auto;
+    margin-top: 3rem;
+}

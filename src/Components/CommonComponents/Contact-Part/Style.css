@@ -1,0 +1,112 @@
+.contact_part {
+    width: 90%;
+    display: flex;
+    max-width: 1320px;
+    margin: auto;
+}
+
+.contact_part .lft_part {
+    width: 50%;
+    min-height: 500px;
+    padding: 1rem 0;
+}
+
+.contact_part .rht_part {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.contact_part .rht_part p {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.contact_part .rht_part small {
+    color: #4719AA;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.contact_part .rht_part .contact_btn {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#e68b45), color-stop(50%, #d24781), to(#d24781));
+    background-image: linear-gradient(to right, #e68b45 0%, #d24781 50%, #d24781 100%);
+    color: #FFF;
+    font-size: 15px;
+    padding: .5rem 4rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    width: fit-content;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.37);
+    background-size: 200% auto;
+}
+
+
+/*  */
+.contact_part .rht_part .contact_btn .bg-reverse {
+    background-image: -webkit-gradient(linear, left top, right top, from(#d24781), color-stop(50%, #e68b45), to(#e68b45));
+    background-image: linear-gradient(to right, #d24781 0%, #e68b45 50%, #e68b45 100%);
+}
+
+.contact_part .rht_part .contact_btn .bg-reverse:hover {
+    background-position: right center;
+}
+
+.contact_part .rht_part .contact_btn:hover {
+    color: #fff;
+    background-position: right center;
+}
+
+@media screen and (max-width:1100px) {
+    .contact_part .lft_part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+    }
+
+    .contact_part {
+        gap: 1rem;
+    }
+
+    .contact_part .lft_part .lftimg {
+        width: auto;
+    }
+
+    .contact_part .rht_part {
+        gap: 1.5rem;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:777px) {
+    .contact_part .lft_part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact_part {
+        flex-direction: column;
+    }
+
+    .contact_part .lft_part .lftimg {
+        width: auto;
+    }
+
+    .contact_part .rht_part {
+        gap: 1.5rem;
+        padding: 1rem 0 2rem 0;
+        width: 100%;
+    }
+
+}

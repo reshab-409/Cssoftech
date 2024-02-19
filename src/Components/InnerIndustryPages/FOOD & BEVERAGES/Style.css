@@ -1,0 +1,85 @@
+.custom_s {
+    width: 90%;
+    max-width: 1320px;
+    margin: 3rem auto;
+}
+
+.custom_s .upr_part h1 {
+    width: 60%;
+    margin: auto;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+}
+
+.custom_s .upr_part h1 .color {
+    height: 15px;
+    width: fit-content;
+}
+
+.custom_s .lwr {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.custom_s .lwr .rht {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 30% 0 30%;
+    background: linear-gradient(0deg, rgba(71, 25, 170, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 2rem 4rem;
+}
+
+.custom_s .lwr .rht .doctor {
+    height: fit-content;
+}
+
+.custom_s .lwr .lft {
+    width: 60%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+    grid-gap: 30px;
+}
+
+.custom_s .lwr .box {
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 2px solid #4719AA;
+    height: fit-content;
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.10);
+}
+
+.custom_s .lwr .box .box_p {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+@media screen and (max-width:800px) {
+    .custom_s .upr_part h1 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:971px) {
+    .custom_s .lwr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .custom_s .lwr .rht {
+        width: 70%;
+        margin: auto;
+    }
+
+    .custom_s .lwr .lft {
+        width: 100%;
+    }
+}

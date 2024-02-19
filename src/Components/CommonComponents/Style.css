@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+.main_sec {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1320px;
+    border-radius: 50px;
+    background: #4719AA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.main_sec h1 {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main_sec h1 img {
+    height: 15px;
+    margin-bottom: 1rem;
+}
+
+
+.quote-main {
+    margin-bottom: 2rem;
+    background: linear-gradient(124deg, #843aaa 0%, #5737bc 59%, #4a2d99 59%, #2c34cd 100%);
+}
+
+.quote-main .wrpr {
+    width: 90%;
+    margin: auto;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    align-items: center;
+}
+
+.quote-main .wrpr .txt {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.quote-main .wrpr .txt p {
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.quote-main .wrpr .txt small {
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+@media screen and (max-width:787px) {
+    .quote-main .wrpr {
+        flex-direction: column;
+    }
+
+    .quote-main .wrpr button {
+        margin-top: 3rem;
+    }
+
+    .quote-main .wrpr .txt {
+        text-align: center;
+    }
+
+    .quote-main .wrpr .txt p {
+        font-size: 40px;
+    }
+
+    .main_sec {
+        padding: 3rem;
+    }
+
+    .quote-main {
+        padding: 3rem 0;
+    }
+
+    .quote-main .wrpr .txt p {
+        font-size: calc(1.625rem + 3vw);
+    }
+
+    .quote-main .wrpr .txt small {
+        font-size: calc(1.265rem + 0.18vw);
+    }
+
+    .main_sec h1 {
+        font-size: calc(1.625rem + 3vw);
+    }
+
+    .quote-main {
+        background: linear-gradient(180deg, #843aaa 0%, #5737bc 59%, #4a2d99 59%, #2c34cd 100%);
+    }
+
+}

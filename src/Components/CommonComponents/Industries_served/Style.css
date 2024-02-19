@@ -1,0 +1,53 @@
+.industries {
+    width: 90%;
+    max-width: 1320px;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.industries .upr {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.industries .upr h1 {
+    font-size: 40px;
+    color: #100F0F;
+}
+
+
+/* Listing */
+
+.industries .s_listing {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-bottom: 4rem;
+}
+
+.industries .s_listing .list {
+    padding: 1.3rem 0;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(217, 217, 217, 1) 23%, rgba(255, 255, 255, 1) 72%);
+    gap: 2rem;
+}
+
+
+.industries .s_listing .list .upr1 {
+    width: fit-content;
+    height: 30px;
+}
+
+.industries .s_listing .list p {
+    font-size: 15px;
+    color: #100F0F;
+    padding: 0;
+    margin: 0;
+}
