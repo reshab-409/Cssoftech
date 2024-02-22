@@ -20,16 +20,23 @@
 }
 
 .banner_it .upr .bnrimg {
-    aspect-ratio: 6/4;
     object-fit: contain;
-    width: fit-content;
+    aspect-ratio: 6/5;
+    width: 40%;
+    margin: 1rem 0 5rem 0;
+}
+
+.banner_it .upr .color {
+    object-fit: contain;
+    aspect-ratio: 6/5;
+    width: 40%;
     margin: 1rem 0 5rem 0;
 }
 
 .banner_it .upr .txt {
     display: flex;
-    width: 60%;
     justify-content: center;
+    width: 60%;
     padding: 1rem;
     flex-direction: column;
 }
@@ -49,7 +56,7 @@
     color: #FFF;
     font-size: 28px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 00;
     line-height: 157%;
 }
 
@@ -73,19 +80,19 @@
     rotate: -2deg;
     background: #883FE7;
     min-height: 120px;
-    max-width: 3400px;
     width: 110%;
+    max-width: 3400px;
     bottom: 0;
 }
 
 .banner_it .numbering {
     position: absolute;
     width: 85%;
-    margin: auto;
     max-width: 1320px;
+    margin: auto;
     min-height: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 30px;
     bottom: 0;
     padding: 1rem 0;
@@ -95,6 +102,14 @@
     display: flex;
     gap: .4rem;
     align-items: flex-end;
+    justify-content: center;
+}
+
+.banner_it .numbering .num:last-child {
+    display: flex;
+    gap: .4rem;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .banner_it .numbering .num .numin {
@@ -110,6 +125,37 @@
 }
 
 @media screen and (max-width:1513px) {
+    /* .banner_it .cross {
+        height: 230px;
+    }
+
+    .banner_it .cross1 {
+        height: 230px;
+    } */
+
+    /* .banner_it .upr {
+        width: 90%;
+        margin: 0 auto 8rem;
+    } */
+
+}
+
+/* @media screen and (max-width:1513px) {
+    .banner_it .upr {
+        width: 90%;
+        margin: 0 auto 14rem;
+    }
+
+} */
+@media screen and (max-width:1187px) {
+    .banner_it .upr {
+        width: 90%;
+        margin: 0 auto 7rem;
+    }
+
+}
+
+@media screen and (max-width:1047px) {
     .banner_it .cross {
         height: 230px;
     }
@@ -120,26 +166,36 @@
 
     .banner_it .upr {
         width: 90%;
-        margin: 0 auto 8rem;
-    }
-
-}
-
-@media screen and (max-width:1513px) {
-    .banner_it .upr {
-        width: 90%;
         margin: 0 auto 10rem;
     }
 
 }
+
+/* @media screen and (max-width:1187px) {
+    .banner_it .cross {
+        height: 230px;
+    }
+
+    .banner_it .cross1 {
+        height: 230px;
+    }
+
+    .banner_it .upr {
+        width: 90%;
+        margin: 0 auto 14rem;
+    }
+
+} */
+
 
 @media screen and (max-width:965px) {
     .banner_it .upr {
         display: flex;
         flex-direction: column;
     }
-    .banner_it .upr .bnrimg {
-        margin: auto;
+
+    .banner_it .upr .color {
+        width: 70%;
     }
 
     .banner_it .upr .txt {
@@ -151,9 +207,48 @@
     .banner_it .upr .txt {
         width: 95%;
     }
+
+    .banner_it .upr .bnrimg {
+        height: auto;
+        margin: auto;
+        width: fit-content;
+        /* margin: 1rem 0 5rem 0; */
+        margin-bottom: 5rem;
+    }
+
+    .banner_it .upr .txt h1 {
+        font-size: 50px;
+    }
+
 }
 
-@media screen and (max-width:738px) {
+@media screen and (max-width:553px) {
+    .banner_it .upr .bnrimg {
+        height: auto;
+    }
+
+    .banner_it .upr .txt h1 {
+        font-size: calc(1.625rem + 3.5vw);
+    }
+
+    .banner_it .upr .txt p {
+        font-size: calc(1.265rem + 0.18vw);
+    }
+
+
+    .banner_it .upr .txt {
+        width: 100%;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .banner_it .upr .color {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:505px) {
     .banner_it .cross {
         height: 420px;
     }
@@ -166,39 +261,18 @@
         width: 90%;
         margin: 0 auto 19rem;
     }
-}
 
-@media screen and (max-width:553px) {
-    .banner_it .upr .bnrimg {
-        height: auto;
-        width: 100%;
-        margin-bottom: 5rem;
+    .banner_it .numbering .num {
+        display: flex;
+        gap: .4rem;
+        align-items: flex-end;
+        justify-content: flex-start;
     }
 
-    .banner_it .cross {
-        height: 470px;
+    .banner_it .numbering .num:last-child {
+        display: flex;
+        gap: .4rem;
+        align-items: flex-end;
+        justify-content: flex-start;
     }
-
-    .banner_it .cross1 {
-        height: 470px;
-    }
-
-    .banner_it .upr {
-        width: 90%;
-        margin: 0 auto 22rem;
-    }
-
-    .banner_it .upr .txt {
-        width: 100%;
-        padding: 0;
-        margin-top: 1rem;
-    }
-    .banner_it .upr .txt h1 {
-        font-size: calc(1.625rem + 3.5vw);
-    }
-
-    .banner_it .upr .txt p {
-        font-size: calc(1.265rem + 0.18vw);
-    }
-
 }
