@@ -14630,7 +14630,8 @@ body {
   display: block;
   padding-top: 2px;
   font-size: calc(1.505rem + 3.06vw);
-  background: linear-gradient(275.95deg, #c931ff -43.86%, #3391ff 148.08%);
+  /* background: linear-gradient(275.95deg, #c931ff -43.86%, #3391ff 148.08%); */
+  background: #002EF4;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
