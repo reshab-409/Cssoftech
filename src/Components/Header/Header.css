@@ -12969,6 +12969,7 @@ a {
 
 .banner {
   background: linear-gradient(253deg, #2113c4 -2.76%, #8d30e9 71.71%), url(../img/banner.jpg);
+  background-attachment: fixed;
   background-blend-mode: multiply;
   width: 100%;
   height: auto;
@@ -12983,6 +12984,9 @@ a {
 
 .banner.inner-banner {
   background: linear-gradient(253deg, #2113c4 -2.76%, #8d30e9 71.71%), url(../img/inner-banner.jpg);
+  /* background-position: center;
+  background-size: cover; */
+  background-attachment: fixed;
 }
 
 .banner.inner-banner .container {
@@ -14065,6 +14069,7 @@ body {
 .service {
   background: #100d32 url(../img/bg.jpg) no-repeat 0 0/cover;
   background-blend-mode: saturation;
+  background-attachment: fixed;
   width: 100%;
   text-align: center;
 }
@@ -14105,6 +14110,11 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  transition: .2s ease-in-out;
+}
+
+.service .services-item:hover {
+  scale: 1.05;
 }
 
 @media (max-width: 767.98px) {
@@ -14624,6 +14634,14 @@ body {
 
 .experience-slider.owl-carousel button.owl-dot.active {
   background: #276ab9;
+}
+
+.experience-item {
+  transition: .2s ease-in-out;
+}
+
+.experience-item:hover {
+  scale: 1.05;
 }
 
 .experience-item span {

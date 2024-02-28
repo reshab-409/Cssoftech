@@ -77,7 +77,7 @@
       transition: all .5s ease-in-out;
       -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.37);
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.37);
-         background-size: 200% auto;
+      background-size: 200% auto;
   }
 
   .image1 img {
@@ -139,6 +139,11 @@
       border-radius: 15px;
       border: 1px solid #2FD8FE;
       background: #FDFDFD;
+      transition: .2s ease-in-out;
+  }
+
+  .projects .main:hover {
+      scale: 1.05;
   }
 
   .projects .main .details .b {
@@ -162,35 +167,36 @@
       transition: all .5s ease-in-out;
       -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.37);
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.37);
-         background-size: 200% auto;
+      background-size: 200% auto;
   }
 
-  
+
 
   /*  */
   .b.bg-reverse {
-    background-image: -webkit-gradient(linear, left top, right top, from(#d24781), color-stop(50%, #e68b45), to(#e68b45));
-    background-image: linear-gradient(to right, #d24781 0%, #e68b45 50%, #e68b45 100%);
+      background-image: -webkit-gradient(linear, left top, right top, from(#d24781), color-stop(50%, #e68b45), to(#e68b45));
+      background-image: linear-gradient(to right, #d24781 0%, #e68b45 50%, #e68b45 100%);
   }
-  
+
   .b.bg-reverse:hover {
-    background-position: right center;
+      background-position: right center;
   }
-  
+
   .b:hover {
-    color: #fff;
-    background-position: right center;
+      color: #fff;
+      background-position: right center;
   }
-  /*  */
-
-
-
-
 
   /*  */
 
 
-/*  */
+
+
+
+  /*  */
+
+
+  /*  */
   .projects .main .proPic {
       width: 100%;
   }

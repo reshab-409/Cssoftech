@@ -104,6 +104,14 @@
       margin-right: 10rem;
   }
 
+  .sec2 .lft .btns button{
+    transition: .2s ease-in-out;
+  }
+  .sec2 .lft .btns button:hover {
+      box-shadow: 2px 30px 25px rgba(0, 0, 0, 0.05);
+      scale: 1.02;
+  }
+
   .sec2 .lft .btns button:nth-child(1) {
       border-radius: 0px 15px 15px 15px;
       background: #4719AA;
@@ -480,8 +488,12 @@
       background: #FFFEFE;
       width: 180px;
       box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.05);
+      transition: .2s ease-in-out;
   }
 
+  .technology .boxs .box:hover {
+      scale: 1.05;
+  }
 
   .technology .boxs .box:nth-child(1) {
       border-top: 13px solid #21759B;
