@@ -90,12 +90,12 @@ const ContactUs = () => {
             <h2>Find us</h2>
             <div className="address-block-container">
               <div className="block-item">
-                <a href="">+91 146546589564</a>
-                <a href="">contact@creationsoul.com</a>
+                <a href="tel:+91 7003990798">+91 7003990798</a>
+                <a href="mailto:info@cssoftech.com">info@cssoftech.com</a>
                 <address>
                   address
                   <br />
-                  xxxxx xxxxxxxxxxxxx
+                  5 Sreema road, Dum dum cantonment, kolkata, India
                 </address>
               </div>
               <div className="block-item">

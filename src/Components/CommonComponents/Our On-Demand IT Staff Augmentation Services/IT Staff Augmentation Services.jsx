@@ -12,17 +12,17 @@ const ITStaffAugmentationServices = () => {
       <div className="upr">
         <div className="txt">
           <h1>Revolutionizing IT</h1>
-          <p>The Era of <span>Intelligent Augmentation</span> Unleashes Unprecedented Technological Advancements</p>
+          <h2>The Era of <span>Intelligent Augmentation</span> Unleashes Unprecedented Technological Advancements</h2>
         </div>
         <img className='bnrimg' src={illu} alt="illu" />
       </div>
       <div className="cross"></div>
       <div className="cross1"></div>
       <div className="numbering">
-        <div className='num'><img className='numin' src={no1} alt="" /><p>SKILLED & VETTED PROFESSIONALS</p></div>
-        <div className='num'><img className='numin' src={no2} alt="" /><p>NO MINIMUM CONTRACT</p></div>
-        <div className='num'><img className='numin' src={no3} alt="" /><p>EMPLOYERS</p></div>
-        <div className='num'><img className='numin' src={no4} alt="" /><p>SAFE DATA TRANSFER</p></div>
+        <div className='num'><img className='numin' src={no1} alt="" /><h3>SKILLED & VETTED PROFESSIONALS</h3></div>
+        <div className='num'><img className='numin' src={no2} alt="" /><h3>NO MINIMUM CONTRACT</h3></div>
+        <div className='num'><img className='numin' src={no3} alt="" /><h3>EMPLOYERS</h3></div>
+        <div className='num'><img className='numin' src={no4} alt="" /><h3>SAFE DATA TRANSFER</h3></div>
       </div>
     </div>
   );

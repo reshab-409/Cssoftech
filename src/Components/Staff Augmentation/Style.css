@@ -11,7 +11,7 @@
     margin: auto;
 }
 
-.Staff_Augmentation .Staff_Augmentation_inr h1 {
+.Staff_Augmentation .Staff_Augmentation_inr h2 {
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -19,8 +19,6 @@
     color: #100F0F;
     margin: 1rem 0;
 }
-
-
 
 /* List */
 
@@ -44,7 +42,7 @@
     box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.10);
 }
 
-.Staff_Augmentation .Staff_Augmentation_s_listing .list h1 {
+.Staff_Augmentation .Staff_Augmentation_s_listing .list h3 {
     font-size: 22px;
     color: #3B18B8;
 }

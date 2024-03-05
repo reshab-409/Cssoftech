@@ -8,20 +8,20 @@ const Listing = ({ List, Heading, SubHeading, Display }) => {
         <div className='service_listing'>
             <div className="inr_listing">
                 <div className="upr_part">
-                    <h1>
+                    <h2>
                         <img className='color' src={color} alt="" />
                         {Heading}
-                    </h1>
-                    <p>
+                    </h2>
+                    <h3>
                         {SubHeading}
-                    </p>
+                    </h3>
                 </div>
                 <div className="s_listing">
                     {List.map((data, index) => {
                         return (
                             <div key={index} className='list'>
                                 <img className='upr1' src={data.img} alt="" />
-                                <h1>{data.name}</h1>
+                                <h3>{data.name}</h3>
                                 <img className='lwr1' src={underline} alt="" />
                                 <p>{data.details}</p>
                             </div>

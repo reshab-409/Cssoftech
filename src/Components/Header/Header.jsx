@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../img/logo.png';
 import './Header.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = ({ onHeaderClick }) => {
   const [isMenuActive, setMenuActive] = useState(false);
@@ -106,7 +106,7 @@ const Header = ({ onHeaderClick }) => {
       <div className="container">
         <div className="wrapper">
           <div className="header-item-left">
-            <h1><Link to='/' className="brand">
+            <h1><Link to='/' rel="preload" className="brand">
               <img src={logo} alt="" />
             </Link></h1>
           </div>
@@ -121,14 +121,14 @@ const Header = ({ onHeaderClick }) => {
                 <button type="button" className="menu-mobile-close"><i className="bi bi-x"></i></button>
               </div>
               <ul className="menu-section">
-                <li onClick={menuClosedClick}> <Link to='/'>Home </Link></li>
+                <li onClick={menuClosedClick}> <Link to='/' rel="preload">Home </Link></li>
                 <li className="menu-item-has-children">
                   <Link>Company <i className="arrowdown"></i></Link>
                   <div className="menu-subs">
                     <div className="menu-mega">
                       <div className="list-item">
                         <ul>
-                          <li onClick={menuClosedClick}><Link to='/about'>About Us</Link></li>
+                          <li onClick={menuClosedClick}><Link to='/about' rel="preload">About Us</Link></li>
                           <li><Link to='/' onClick={() => { menuClosedClick(); handleLinkClick(); }}>Why choose us?</Link></li>
                           <li><Link>Certifications</Link></li>
                         </ul>
@@ -144,38 +144,38 @@ const Header = ({ onHeaderClick }) => {
                   <div className="menu-subs">
                     <div className="menu-mega">
                       <div className="list-item">
-                        <Link onClick={menuClosedClick} to='/mobile-development'><h4 className="title">MOBILE DEVELOPMENT</h4></Link>
+                        <Link onClick={menuClosedClick} to='/mobile-development' rel="preload"><h4 className="title">MOBILE DEVELOPMENT</h4></Link>
                         <ul>
-                          <li><Link onClick={menuClosedClick} to='/native-development'>React Native Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/native-development'>Flutter App Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/native-development'>Native Android Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/native-development'>Native iOS App Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/native-development' rel="preload">React Native Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/native-development' rel="preload">Flutter App Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/native-development' rel="preload">Native Android Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/native-development' rel="preload">Native iOS App Development</Link></li>
                         </ul>
-                        <Link onClick={menuClosedClick} to='/ecommerce-development'> <h4 className="title">E-COMMERCE DEVELOPMENT</h4></Link>
+                        <Link onClick={menuClosedClick} to='/ecommerce-development' rel="preload"> <h4 className="title">E-COMMERCE DEVELOPMENT</h4></Link>
                         <ul>
-                          <li><Link onClick={menuClosedClick} to='magento-development'>Magento Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='magento-development'>WooCommerce Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='magento-development'>Shopify Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='magento-development' rel="preload">Magento Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='magento-development' rel="preload">WooCommerce Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='magento-development' rel="preload">Shopify Development</Link></li>
                         </ul>
-                        <Link onClick={menuClosedClick} to='/softwear-development'>  <h4 className="title">SOFTWARE DEVELOPMENT</h4></Link>
+                        <Link onClick={menuClosedClick} to='/softwear-development' rel="preload">  <h4 className="title">SOFTWARE DEVELOPMENT</h4></Link>
                         <ul>
-                          <li><Link onClick={menuClosedClick} to='/softwear-development-inner'>Software Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/softwear-development-inner' rel="preload">Software Development</Link></li>
                         </ul>
                       </div>
 
                       <div className="list-item">
-                        <Link onClick={menuClosedClick} to='/web-development'>  <h4 className="title">WEB DEVELOPMENT</h4></Link>
+                        <Link onClick={menuClosedClick} to='/web-development' rel="preload">  <h4 className="title">WEB DEVELOPMENT</h4></Link>
                         <ul>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>React Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>Node.js Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>Angular Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>WordPress Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>Drupal Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>.Net Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>PHP Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>Python Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>Java Development</Link></li>
-                          <li><Link onClick={menuClosedClick} to='/react-development'>Laravel Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">React Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">Node.js Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">Angular Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">WordPress Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">Drupal Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">.Net Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">PHP Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">Python Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">Java Development</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/react-development' rel="preload">Laravel Development</Link></li>
                         </ul>
                       </div>
 
@@ -192,13 +192,13 @@ const Header = ({ onHeaderClick }) => {
                         <ul>
                           <li><Link>Full Stack Development</Link></li>
                         </ul>
-                        <Link onClick={menuClosedClick} to='/it-staff-augmentation'>  <h4 className="title">IT STAFF AUGMENTATION</h4></Link>
+                        <Link onClick={menuClosedClick} to='/it-staff-augmentation' rel="preload">  <h4 className="title">IT STAFF AUGMENTATION</h4></Link>
                         <ul>
-                          <li><Link onClick={menuClosedClick} to='/it-staff-augmentation-services'>IT Staff Augmentation Services</Link></li>
+                          <li><Link onClick={menuClosedClick} to='/it-staff-augmentation-services' rel="preload">IT Staff Augmentation Services</Link></li>
                         </ul>
                       </div>
                       <img className='lgo' src={logo} alt="" />
-                      <Link onClick={menuClosedClick} to='/contactUs' className="lgo login">Contact Us</Link>
+                      <Link onClick={menuClosedClick} to='/contactUs' rel="preload" className="lgo login">Contact Us</Link>
                     </div>
                   </div>
                 </li>
@@ -207,51 +207,51 @@ const Header = ({ onHeaderClick }) => {
                   <div className="menu-subs">
                     <div className="menu-mega">
                       <div className="list-item">
-                        <Link onClick={menuClosedClick} to='/healthcare'> <h4 className="title">Health Care</h4></Link>
+                        <Link onClick={menuClosedClick} to='/healthcare' rel="preload"> <h4 className="title">Health Care</h4></Link>
                         <ul>
                           <li><Link></Link></li>
                         </ul>
-                        <Link onClick={menuClosedClick} to='/food-beverages'><h4 className="title">Food & Beverages</h4></Link>
+                        <Link onClick={menuClosedClick} to='/food-beverages' rel="preload"><h4 className="title">Food & Beverages</h4></Link>
                         <ul>
                           <li><Link></Link></li>
                         </ul>
-                        <Link onClick={menuClosedClick} to='/real-estate'><h4 className="title">Real estate</h4></Link>
+                        <Link onClick={menuClosedClick} to='/real-estate' rel="preload"><h4 className="title">Real estate</h4></Link>
                         <ul>
                           <li><Link></Link></li>
                         </ul>
                       </div>
 
                       <div className="list-item">
-                        <Link onClick={menuClosedClick} to='/education-e-learning'><h4 className="title">Education & E-learning</h4></Link>
+                        <Link onClick={menuClosedClick} to='/education-e-learning' rel="preload"><h4 className="title">Education & E-learning</h4></Link>
                         <ul>
                           <li><Link></Link></li>
                         </ul>
-                        <Link onClick={menuClosedClick} to='/retail-ecommerce'><h4 className="title">Retail & E-commerce</h4></Link>
+                        <Link onClick={menuClosedClick} to='/retail-ecommerce' rel="preload"><h4 className="title">Retail & E-commerce</h4></Link>
                         <ul>
                           <li><Link></Link></li>
                         </ul>
-                        <Link onClick={menuClosedClick} to='/logistic-transportation'><h4 className="title">Logistic & transportation</h4></Link>
+                        <Link onClick={menuClosedClick} to='/logistic-transportation' rel="preload"><h4 className="title">Logistic & transportation</h4></Link>
                         <ul>
                           <li><Link></Link></li>
                         </ul>
                       </div>
                       <img className='lgo' src={logo} alt="" />
-                      <Link onClick={menuClosedClick} to='/contactUs' className="lgo login">Contact Us</Link>
+                      <Link onClick={menuClosedClick} to='/contactUs' rel="preload" className="lgo login">Contact Us</Link>
                     </div>
                   </div>
                 </li>
                 <li><Link>Products </Link></li>
-                <li><Link onClick={menuClosedClick} to='/case-study'>Case Studies </Link></li>
+                <li><Link onClick={menuClosedClick} to='/case-study' rel="preload">Case Studies </Link></li>
                 <li><Link>Blog </Link></li>
 
                 <img className='lgo' src={logo} alt="" />
-                <Link onClick={menuClosedClick} to='/contactUs' className="lgo login">Contact Us</Link>
+                <Link onClick={menuClosedClick} to='/contactUs' rel="preload" className="lgo login">Contact Us</Link>
               </ul>
             </nav>
           </div>
 
           <div className="header-item-right">
-            <Link to='/contactUs' className="login">Contact Us</Link>
+            <Link to='/contactUs' rel="preload" className="login">Contact Us</Link>
             <button type="button" className="menu-mobile-trigger">
               <span></span>
               <span></span>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import color from '../img/Rectangle 47.png';
 import './Style.css';
 import challenges from '../img/challenges.png';
@@ -12,9 +12,10 @@ import css from '../img/CSS.png';
 import wordpress from '../img/Wordpress.png';
 import sql from '../img/SQL.png';
 import MoreCaseStudies from '../CommonComponents/MoreCaseStudies';
-import Projects from '../CommonComponents/Projects';
 import Feedback from '../CommonComponents/Feedback';
 import { Link } from 'react-router-dom';
+import { Triangle } from 'react-loader-spinner';
+const Projects = React.lazy(() => import('../CommonComponents/Projects'));
 
 const CasePage2 = () => {
     useEffect(() => {
@@ -25,9 +26,9 @@ const CasePage2 = () => {
             <section className="banner2">
                 <div className="container3">
                     <div className="banner-content2">
-                        <p> A WEBSITE </p>
+                        <h1> A WEBSITE </h1>
                         <h2>FOR AN ORGANIC</h2>
-                        <small> FOOD BRAND  </small>
+                        <h3> FOOD BRAND  </h3>
                     </div>
                 </div>
             </section>
@@ -36,7 +37,7 @@ const CasePage2 = () => {
             <div className="sec2">
                 <div className="lft">
                     <img src={color} alt="color" />
-                    <h1> Overview</h1>
+                    <h2> Overview</h2>
                     <p>Our journey at [Your Food Brand] has been nothing short
                         of a flavorful adventure, and we're excited to share
                         the behind the-scenes tale of our culinary prowess.
@@ -65,7 +66,7 @@ const CasePage2 = () => {
 
             <div className="challenges">
                 <div className="lft">
-                    <h1>Challenges</h1>
+                    <h2>Challenges</h2>
                     <ul>
                         <li><img src={dot} alt='dot' />Capturing the visual essence of food through images and maintaining
                             a consistent aesthetic can be challenging</li>
@@ -78,19 +79,16 @@ const CasePage2 = () => {
                     </ul>
                 </div>
                 <div className="rht">
-                    <img src={challenges} className='cngs' alt="challenge image" />
+                    <img src={challenges} className='cngs' alt="challenge" />
                 </div>
             </div>
-
-
 
             {/* Next section */}
             <DropDown fstname="Our goal" sndname="strategy" rdname="solutions" />
 
-
             {/* Next section */}
             <div className="feedback">
-                <h1><img src={color} alt="color" />Clients Feedback</h1>
+                <h2><img src={color} alt="color" />Clients Feedback</h2>
                 <div className="txts">
                     <img src={feedImg} alt="feedImg" className='feedImg' />
                     <div className="details">
@@ -102,25 +100,25 @@ const CasePage2 = () => {
 
             {/* Next section */}
             <div className="webLink">
-                <p>Website link</p>
+                <h2>Website link</h2>
                 <a href=''>https://cssoftech.com</a>
             </div>
 
 
             {/* Next section */}
-            <p className='p'>Testimonial</p>
-            <h1 className='h1'>How our services bring us success</h1>
+            <h2 className='p'>Testimonial</h2>
+            <h3 className='h1'>How our services bring us success</h3>
             {/* <Slide /> */}
             <Feedback />
 
 
             {/* Next section */}
             <div className="center">
-                <h1><img src={color} alt="color" />Technology</h1>
-                <p>It is complete a <span>WordPress</span> website we developed</p>
+                <h2><img src={color} alt="color" />Technology</h2>
+                <h3>It is complete a <span>WordPress</span> website we developed</h3>
             </div>
             <div className="technology">
-                <h1>Technology we used</h1>
+                <h2>Technology we used</h2>
                 <div className="boxs">
                     <div className="box">
                         <img src={wordpress} alt={wordpress} />
@@ -137,14 +135,22 @@ const CasePage2 = () => {
                 </div>
             </div>
 
-
             {/* Next section */}
             <MoreCaseStudies />
 
-
             {/* Next section */}
             <div className="projects_main">
-                <Projects />
+                <Suspense fallback={<Triangle
+                    visible={true}
+                    height="80"
+                    width="80"
+                    color="#002EF4"
+                    ariaLabel="triangle-loading"
+                    wrapperStyle={{ margin: 'auto', marginTop: '5rem' }}
+                    wrapperClass=""
+                />}>
+                    <Projects />
+                </Suspense>
                 <Link to='/case-study'><button className='all'>View More <img src={blueArrow} alt='arrow' /></button></Link>
             </div>
 

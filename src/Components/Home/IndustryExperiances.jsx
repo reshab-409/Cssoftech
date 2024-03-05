@@ -26,7 +26,7 @@ const IndustryExperiances = () => {
                         <div className="item">
                             <div className="experience-item">
                                 {/* <span className="icon-digital-marketing"></span> */}
-                                <span class="material-symbols-outlined">
+                                <span className="material-symbols-outlined">
                                     lunch_dining
                                 </span>
                                 <h5>Food & Beverages</h5>
@@ -35,7 +35,7 @@ const IndustryExperiances = () => {
                         <div className="item">
                             <div className="experience-item">
                                 {/* <span className="icon-e-commerce"></span> */}
-                                <span class="material-symbols-outlined">
+                                <span className="material-symbols-outlined">
                                     shopping_bag
                                 </span>
                                 <h5>Retail & E-Commerce</h5>
@@ -44,7 +44,7 @@ const IndustryExperiances = () => {
                         <div className="item">
                             <div className="experience-item">
                                 {/* <span className="icon-logistics-transportation"></span> */}
-                                <span class="material-symbols-outlined">
+                                <span className="material-symbols-outlined">
                                     local_shipping
                                 </span>
                                 <h5>Logistics & Transportation</h5>
@@ -53,7 +53,7 @@ const IndustryExperiances = () => {
                         <div className="item">
                             <div className="experience-item">
                                 {/* <span className="icon-automotive"></span> */}
-                                <span class="material-symbols-outlined">
+                                <span className="material-symbols-outlined">
                                     ecg_heart
                                 </span>
                                 <h5>Health Care</h5>
@@ -62,7 +62,7 @@ const IndustryExperiances = () => {
                         <div className="item">
                             <div className="experience-item">
                                 {/* <span className="icon-e-learning"></span> */}
-                                <span class="material-symbols-outlined">
+                                <span className="material-symbols-outlined">
                                     school
                                 </span>
                                 <h5>Educaton & E-Learning</h5>
@@ -71,7 +71,7 @@ const IndustryExperiances = () => {
                         <div className="item">
                             <div className="experience-item">
                                 {/* <span className="icon-e-commerce"></span> */}
-                                <span class="material-symbols-outlined">
+                                <span className="material-symbols-outlined">
                                     real_estate_agent
                                 </span>
                                 <h5>Real Estate</h5>

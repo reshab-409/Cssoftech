@@ -20,7 +20,7 @@
       width: 60%;
   }
 
-  .banner-content1 h2 {
+  .banner-content1 h1 {
       color: #F0F0F0;
       font-family: 'Inter', sans-serif;
       font-size: 40px;
@@ -29,7 +29,7 @@
       line-height: normal;
   }
 
-  .banner-content1 p {
+  .banner-content1 h2 {
       font-family: 'Inter', sans-serif;
       color: #F0F0F0;
       font-size: 30px;
@@ -45,7 +45,7 @@
       margin: 1rem 0;
   }
 
-  .banner-content1 small {
+  .banner-content1 p {
       font-family: 'Inter', sans-serif;
       color: #D2BDFF;
       font-family: Inter;
@@ -107,7 +107,7 @@
       margin-top: 1rem;
   }
 
-  .container2 h1 {
+  .container2 h2 {
       font-family: 'Inter', sans-serif;
       color: #000;
       font-size: 40px;
@@ -118,7 +118,7 @@
       margin-top: 1.5rem;
   }
 
-  .container2 h1 span {
+  .container2 h2 span {
       font-family: 'Inter', sans-serif;
       color: #E4844B;
       font-size: 40px;
@@ -187,21 +187,11 @@
       background-position: right center;
   }
 
-  /*  */
-
-
-
-
-
-  /*  */
-
-
-  /*  */
   .projects .main .proPic {
       width: 100%;
   }
 
-  .projects .main .details p {
+  .projects .main .details h2 {
       color: #4719AA;
       font-family: 'Inter', sans-serif;
       font-size: 20px;
@@ -210,7 +200,7 @@
       margin-top: 1rem;
   }
 
-  .projects .main .details small {
+  .projects .main .details p {
       color: #5D5D5D;
       font-size: 12px;
       font-family: 'Inter', sans-serif;
@@ -233,7 +223,6 @@
       align-items: center;
       margin: auto;
       margin-top: 3rem;
-
   }
 
 
@@ -256,12 +245,11 @@
           height: auto;
       }
 
-      .container2 h1 {
+      .container2 h2 {
           font-size: 30px;
       }
 
-      .container2 h1 span {
+      .container2 h2 span {
           font-size: 30px;
       }
-
   }

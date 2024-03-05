@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import ITStaffAugmentationServices from '../CommonComponents/Our On-Demand IT Staff Augmentation Services/IT Staff Augmentation Services';
 import TopRated from '../CommonComponents/Top_rated/TopRated';
 import './Style.css';
@@ -14,14 +14,17 @@ import StaffAugmentation from '../Staff Augmentation/Staff Augmentation';
 import Feedback from '../CommonComponents/Feedback';
 import toprated from '../assets/img/topratedimg.png';
 import MoreCaseStudies from '../CommonComponents/MoreCaseStudies';
-import Projects from '../CommonComponents/Projects';
+// import Projects from '../CommonComponents/Projects';
 import Quote from '../CommonComponents/Quote';
 import { Link } from 'react-router-dom';
+import { Triangle } from 'react-loader-spinner';
+
+const Projects = React.lazy(() => import('../CommonComponents/Projects'));
 
 const ITStaffAugmentationServicesMain = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []); 
+    }, []);
     const List = [
         {
             name: 'PHP Development',
@@ -70,7 +73,17 @@ const ITStaffAugmentationServicesMain = () => {
             <Feedback />
             <MoreCaseStudies />
             <div className="cont_project">
-                <Projects />
+                <Suspense fallback={<Triangle
+                        visible={true}
+                        height="80"
+                        width="80"
+                        color="#002EF4"
+                        ariaLabel="triangle-loading"
+                        wrapperStyle={{ margin: 'auto', marginTop: '5rem' }}
+                        wrapperClass=""
+                    />}>
+                    <Projects />
+                </Suspense>
                 <Link to='/case-study'><button className='all'>View More <img src={blueArrow} alt='arrow' /></button></Link>
             </div>
             <Quote />

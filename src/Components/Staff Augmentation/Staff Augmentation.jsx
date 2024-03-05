@@ -25,14 +25,14 @@ const StaffAugmentation = () => {
         <div className='Staff_Augmentation'>
             <div className="Staff_Augmentation_inr">
                 <img className='color' src={color} alt="" />
-                <h1>How to do Staff Augmentation?</h1>
+                <h2>How to do Staff Augmentation?</h2>
             </div>
 
             <div className="Staff_Augmentation_s_listing">
                 {List.map((data, index) => {
                     return (
                         <div key={index} className='list'>
-                            <h1>{data.name}</h1>
+                            <h3>{data.name}</h3>
                             <p>{data.details}</p>
                         </div>
                     )

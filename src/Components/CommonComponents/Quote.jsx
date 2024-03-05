@@ -13,12 +13,11 @@ const Quote = () => {
         <div className='quote-main'>
             <div className="wrpr">
                   <div className="txt">
-                <p>Request A Quote</p>
-                <small>Tell us about your project to start the conversation!</small>
+                <h2>Request A Quote</h2>
+                <p>Tell us about your project to start the conversation!</p>
             </div>
             <button onClick={popup} className='button-primary'>Let's Talk</button>
             </div>
-          
             <PopUpForm ModalFunction={childRef} />
         </div>
     );

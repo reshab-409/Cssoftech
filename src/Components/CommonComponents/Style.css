@@ -13,7 +13,7 @@
     min-height: 200px;
 }
 
-.main_sec h1 {
+.main_sec h2 {
     color: #FFF;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
@@ -25,7 +25,7 @@
     line-height: normal;
 }
 
-.main_sec h1 img {
+.main_sec h2 img {
     height: 15px;
     margin-bottom: 1rem;
 }
@@ -53,7 +53,7 @@
     justify-content: center;
 }
 
-.quote-main .wrpr .txt p {
+.quote-main .wrpr .txt h2 {
     font-family: 'Inter', sans-serif;
     color: #FFF;
     font-size: 45px;
@@ -62,7 +62,7 @@
     line-height: normal;
 }
 
-.quote-main .wrpr .txt small {
+.quote-main .wrpr .txt p {
     font-family: 'Inter', sans-serif;
     color: #FFF;
     font-size: 19px;
@@ -70,7 +70,6 @@
     font-weight: 500;
     line-height: normal;
 }
-
 
 @media screen and (max-width:787px) {
     .quote-main .wrpr {
@@ -85,10 +84,6 @@
         text-align: center;
     }
 
-    .quote-main .wrpr .txt p {
-        font-size: 40px;
-    }
-
     .main_sec {
         padding: 3rem;
     }
@@ -97,20 +92,19 @@
         padding: 3rem 0;
     }
 
-    .quote-main .wrpr .txt p {
+    .quote-main .wrpr .txt h2 {
         font-size: calc(1.625rem + 3vw);
     }
 
-    .quote-main .wrpr .txt small {
+    .quote-main .wrpr .txt p {
         font-size: calc(1.265rem + 0.18vw);
     }
 
-    .main_sec h1 {
+    .main_sec h2 {
         font-size: calc(1.625rem + 3vw);
     }
 
     .quote-main {
         background: linear-gradient(180deg, #843aaa 0%, #5737bc 59%, #4a2d99 59%, #2c34cd 100%);
     }
-
 }

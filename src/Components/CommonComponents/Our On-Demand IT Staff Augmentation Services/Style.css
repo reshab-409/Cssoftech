@@ -51,7 +51,7 @@
     letter-spacing: 2.625px;
 }
 
-.banner_it .upr .txt p {
+.banner_it .upr .txt h2 {
     font-family: 'Inter', sans-serif;
     color: #FFF;
     font-size: 28px;
@@ -60,7 +60,7 @@
     line-height: 157%;
 }
 
-.banner_it .upr .txt p span {
+.banner_it .upr .txt h2 span {
     color: #79E7FF;
 }
 
@@ -117,42 +117,18 @@
     margin-bottom: 1.5rem;
 }
 
-.banner_it .numbering .num p {
+.banner_it .numbering .num h3 {
     font-size: 15px;
     color: #FAFAFA;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
 }
 
-@media screen and (max-width:1513px) {
-    /* .banner_it .cross {
-        height: 230px;
-    }
-
-    .banner_it .cross1 {
-        height: 230px;
-    } */
-
-    /* .banner_it .upr {
-        width: 90%;
-        margin: 0 auto 8rem;
-    } */
-
-}
-
-/* @media screen and (max-width:1513px) {
-    .banner_it .upr {
-        width: 90%;
-        margin: 0 auto 14rem;
-    }
-
-} */
 @media screen and (max-width:1187px) {
     .banner_it .upr {
         width: 90%;
         margin: 0 auto 7rem;
     }
-
 }
 
 @media screen and (max-width:1047px) {
@@ -170,23 +146,6 @@
     }
 
 }
-
-/* @media screen and (max-width:1187px) {
-    .banner_it .cross {
-        height: 230px;
-    }
-
-    .banner_it .cross1 {
-        height: 230px;
-    }
-
-    .banner_it .upr {
-        width: 90%;
-        margin: 0 auto 14rem;
-    }
-
-} */
-
 
 @media screen and (max-width:965px) {
     .banner_it .upr {
@@ -212,14 +171,12 @@
         height: auto;
         margin: auto;
         width: fit-content;
-        /* margin: 1rem 0 5rem 0; */
         margin-bottom: 5rem;
     }
 
     .banner_it .upr .txt h1 {
         font-size: 50px;
     }
-
 }
 
 @media screen and (max-width:553px) {
@@ -231,10 +188,9 @@
         font-size: calc(1.625rem + 3.5vw);
     }
 
-    .banner_it .upr .txt p {
+    .banner_it .upr .txt h2 {
         font-size: calc(1.265rem + 0.18vw);
     }
-
 
     .banner_it .upr .txt {
         width: 100%;

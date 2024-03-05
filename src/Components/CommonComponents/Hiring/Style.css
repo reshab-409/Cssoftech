@@ -16,7 +16,7 @@
     width: 60%;
 }
 
-.hiring .upr_part h1 {
+.hiring .upr_part h2 {
     width: fit-content;
     display: flex;
     font-size: 35px;
@@ -26,7 +26,7 @@
 
 }
 
-.hiring .upr_part h1 .color {
+.hiring .upr_part h2 .color {
     height: 15px;
     width: 300px;
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import TopRated from '../CommonComponents/Top_rated/TopRated';
 import '../IT Staff Augmentation Services/Style.css';
 import img1 from '../assets/img/listpic1.png';
@@ -12,13 +12,15 @@ import Feedback from '../CommonComponents/Feedback';
 import MoreCaseStudies from '../CommonComponents/MoreCaseStudies';
 import service4 from '../assets/Service4_lwrbnr.png';
 import servicebnr from '../assets/service4_bnr.png';
-import Projects from '../CommonComponents/Projects';
+// import Projects from '../CommonComponents/Projects';
 import Service4_dev from '../assets/service4-dev.png';
 import Quote from '../CommonComponents/Quote';
 import Banner from '../CommonComponents/ServiceBanner/Banner';
 import Industries from '../CommonComponents/Industries_served/Industries';
 import DevelopementService from '../CommonComponents/Developement_services/DevelopementService';
 import { Link } from 'react-router-dom';
+import { Triangle } from 'react-loader-spinner';
+const Projects = React.lazy(() => import('../CommonComponents/Projects'));
 
 const EcommerceDevelopement = () => {
     useEffect(() => {
@@ -90,7 +92,18 @@ const EcommerceDevelopement = () => {
             <Feedback />
             <MoreCaseStudies />
             <div className="cont_project">
-                <Projects />
+                <Suspense fallback={<Triangle
+                    visible={true}
+                    height="80"
+                    width="80"
+                    color="#002EF4"
+                    ariaLabel="triangle-loading"
+                    wrapperStyle={{ margin: 'auto', marginTop: '5rem' }}
+                    wrapperClass=""
+                />}>
+                    <Projects />
+                </Suspense>
+
                 <Link to='/case-study'><button className='all'>View More <img src={blueArrow} alt='arrow' /></button></Link>
             </div>
             <Quote />

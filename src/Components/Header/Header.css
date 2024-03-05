@@ -15392,6 +15392,7 @@ body {
   position: relative;
   width: 33.3%;
   min-height: 112px;
+  padding: 0 1.5rem 0 0;
 }
 
 @media screen and (max-width:1059px) {
@@ -15472,7 +15473,7 @@ body {
 .contact-address .address-container .address-block-container .block-item::after {
   content: '';
   position: absolute;
-  right: 15%;
+  right: 5%;
   top: 0;
   width: 1px;
   height: 100%;
@@ -15761,4 +15762,39 @@ body {
     padding-top: 480px;
   }
 
+}
+
+/* loader */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.partner {
+  margin: auto;
+  width: fit-content;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 1rem 0;
+  padding: .5rem;
+}
+
+.partner .partner-logo {
+  height: 50px;
+  object-fit: contain;
+  aspect-ratio: 1.2/1;
+}
+
+@media (max-width: 767.98px) {
+  .partner {
+    margin: auto;
+    width: fit-content;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 1rem auto;
+    padding: .5rem;
+  }
 }

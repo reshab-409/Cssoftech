@@ -4,7 +4,7 @@
     margin: 3rem auto;
 }
 
-.custom_s .upr_part h1 {
+.custom_s .upr_part h2 {
     width: 60%;
     margin: auto;
     gap: 1rem;
@@ -13,7 +13,7 @@
     font-size: 35px;
 }
 
-.custom_s .upr_part h1 .color {
+.custom_s .upr_part h2 .color {
     height: 15px;
     width: fit-content;
 }

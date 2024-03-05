@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import TopRated from '../CommonComponents/Top_rated/TopRated';
 import '../IT Staff Augmentation Services/Style.css';
 import img1 from '../assets/img/listpic1.png';
@@ -12,18 +12,20 @@ import Feedback from '../CommonComponents/Feedback';
 import MoreCaseStudies from '../CommonComponents/MoreCaseStudies';
 import service3 from '../assets/Service3_lwrbnr.png';
 import servicebnr from '../assets/service3_bannerTop.png';
-import Projects from '../CommonComponents/Projects';
+// import Projects from '../CommonComponents/Projects';
+import { Triangle } from 'react-loader-spinner'
 import servDev from '../assets/service3_dev.png';
 import Quote from '../CommonComponents/Quote';
 import Banner from '../CommonComponents/ServiceBanner/Banner';
 import Industries from '../CommonComponents/Industries_served/Industries';
 import DevelopementService from '../CommonComponents/Developement_services/DevelopementService';
 import { Link } from 'react-router-dom';
+const Projects = React.lazy(() => import('../CommonComponents/Projects'));
 
 const WebDevelopment = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []); 
+    }, []);
     const List = [
         {
             name: 'Custom application development',
@@ -74,12 +76,22 @@ const WebDevelopment = () => {
             <TopRated Heading='Custom Web App Development Company' SubHeading='At Creationsoul, we take pride in our role as a leading IT company dedicated to transforming your online presence through cutting-edge web development services. Our team of skilled developers is committed to bringing your vision to life and ensuring that your website not only meets but exceeds industry standards.' Pic={service3} />
             <Listing Heading='Business-Friendly' SubHeading='Mobile App Development Services for Different Platforms' Display='none' List={List} />
             <DevelopementService className="s_listing" List={ListOfDevelopement} Pic={servDev} Heading='Web app development at creationsoul' SubHeading='We made mobile app for both android and IOS' />
-            <Industries/>
+            <Industries />
             <Hiring />
             <Feedback />
             <MoreCaseStudies />
             <div className="cont_project">
-                <Projects />
+                <Suspense fallback={<Triangle
+                        visible={true}
+                        height="80"
+                        width="80"
+                        color="#002EF4"
+                        ariaLabel="triangle-loading"
+                        wrapperStyle={{ margin: 'auto', marginTop: '5rem' }}
+                        wrapperClass=""
+                    />}>
+                    <Projects />
+                </Suspense>
                 <Link to='/case-study'><button className='all'>View More <img src={blueArrow} alt='arrow' /></button></Link>
             </div>
             <Quote />

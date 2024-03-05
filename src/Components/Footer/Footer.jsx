@@ -1,6 +1,9 @@
 import React from 'react';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF, FaLinkedinIn, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
+import ISO from '../assets/ISO_9001-2015_w.jpg';
+import NSIC from '../assets/newNS.png';
 import logo from '../img/logo.png';
 import '../Header/Header.css';
 import { Link } from 'react-router-dom';
@@ -41,20 +44,27 @@ const Footer = ({ onHeaderClick }) => {
                         <h4>Industries</h4>
                         <div className="toggle-menu">
                             <Link to='/healthcare'>Health Care</Link>
-                            <Link>Food & Beverages</Link>
-                            <Link>Real Estate</Link>
-                            <Link>Education & E-learning</Link>
-                            <Link>Retail & E-commerce</Link>
+                            <Link to='/food-beverages'>Food & Beverages</Link>
+                            <Link to='/real-estate'>Real Estate</Link>
+                            <Link to='/education-e-learning'>Education & E-learning</Link>
+                            <Link to='/retail-ecommerce'>Retail & E-commerce</Link>
+                            <Link to='/logistic-transportation'>Logistic & transportation</Link>
                         </div>
                     </div>
                     <div className="footer-block">
                         <h4>Contact Us</h4>
                         <div className="toggle-menu">
-                            <address>2055 Gateway Place - Ste 500 Delhi, India</address>
-                            <a href="mailto:info@creationsoul.com">info@creationsoul.com</a>
-                            <a href="tel:+91 (xxx) xxxxxxx">+91 (xxx) xxxxxxx</a>
+                            <address>5 Sreema road, Dum dum cantonment, kolkata, India</address>
+                            <a href="mailto:info@cssoftech.com">info@cssoftech.com</a>
+                            <a href="tel:+91 7003990798">Call - +91 7003990798</a>
+                            <a aria-label="Chat on WhatsApp" href="https://wa.me/7003990798"><FaWhatsapp /> - Chat on WhatsApp</a>
+                            <a />
                         </div>
                     </div>
+                </div>
+                <div className="partner">
+                    <img className='partner-logo' src={NSIC} alt="NSIC" />
+                    <img className='partner-logo' src={ISO} alt="ISO" />
                 </div>
                 <div className="footer-bottom">
                     <Link to='/'><img className='btm_ftr_logo' src={logo} alt="" /></Link>
@@ -69,7 +79,7 @@ const Footer = ({ onHeaderClick }) => {
                         </div>
                     </div>
                     <div className="copyright">
-                        <div>© 2021 Creationsoul. All Rights Reserved</div>
+                        <div>© 2024 Creationsoul. All Rights Reserved</div>
                         <Link to='/privacy-and-policy'>Privacy Policy</Link>
                         <Link to='/terms-and-services'>Terms of Service</Link>
                     </div>

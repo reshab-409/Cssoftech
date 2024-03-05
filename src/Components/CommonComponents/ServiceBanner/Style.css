@@ -53,16 +53,16 @@
     letter-spacing: 2.625px;
 }
 
-.banner_it1 .upr .txt p {
+.banner_it1 .upr .txt h2 {
     font-family: 'Inter', sans-serif;
     color: #FFF;
     font-size: 28px;
     font-style: normal;
-    font-weight: 00;
+    font-weight: 500;
     line-height: 157%;
 }
 
-.banner_it1 .upr .txt p span {
+.banner_it1 .upr .txt h2 span {
     color: #79E7FF;
 }
 
@@ -119,42 +119,18 @@
     margin-bottom: 1.5rem;
 }
 
-.banner_it1 .numbering .num p {
+.banner_it1 .numbering .num h3 {
     font-size: 15px;
     color: #FAFAFA;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
 }
 
-@media screen and (max-width:1513px) {
-    /* .banner_it1 .cross {
-        height: 230px;
-    }
-
-    .banner_it1 .cross1 {
-        height: 230px;
-    } */
-
-    /* .banner_it1 .upr {
-        width: 90%;
-        margin: 0 auto 8rem;
-    } */
-
-}
-
-/* @media screen and (max-width:1513px) {
-    .banner_it1 .upr {
-        width: 90%;
-        margin: 0 auto 14rem;
-    }
-
-} */
 @media screen and (max-width:1250px) {
     .banner_it1 .upr {
         width: 90%;
         margin: 0 auto 4rem;
     }
-
 }
 
 @media screen and (max-width:1187px) {
@@ -162,7 +138,6 @@
         width: 90%;
         margin: 0 auto 7rem;
     }
-
 }
 
 @media screen and (max-width:1047px) {
@@ -180,23 +155,6 @@
     }
 
 }
-
-/* @media screen and (max-width:1187px) {
-    .banner_it1 .cross {
-        height: 230px;
-    }
-
-    .banner_it1 .cross1 {
-        height: 230px;
-    }
-
-    .banner_it1 .upr {
-        width: 90%;
-        margin: 0 auto 14rem;
-    }
-
-} */
-
 
 @media screen and (max-width:965px) {
     .banner_it1 .upr {
@@ -241,10 +199,9 @@
         font-size: calc(1.625rem + 3.5vw);
     }
 
-    .banner_it1 .upr .txt p {
+    .banner_it1 .upr .txt h2 {
         font-size: calc(1.265rem + 0.18vw);
     }
-
 
     .banner_it1 .upr .txt {
         width: 100%;

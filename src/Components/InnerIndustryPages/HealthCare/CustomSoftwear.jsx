@@ -29,10 +29,10 @@ const CustomSoftwear = () => {
     return (
         <div className='custom_s'>
             <div className="upr_part">
-                <h1>
+                <h2>
                     <img className='color' src={color} alt="" />
                     Creationsoul made custom software, website and and app  for health business
-                </h1>
+                </h2>
             </div>
 
             <div className="lwr">

@@ -13,7 +13,6 @@
     padding: 2rem 0;
 }
 
-
 .toprated .topin .rht {
     width: 60%;
     display: flex;
@@ -27,16 +26,16 @@
     width: 250px;
 }
 
-.toprated .topin .rht h1 {
+.toprated .topin .rht h2 {
     color: #4719AA;
     font-size: 30px;
 }
 
-.toprated .topin .rht p {
+.toprated .topin .rht h3 {
     color: #100F0F;
     font-size: 35px;
 }
-.toprated .topin .rht small {
+.toprated .topin .rht p {
     color: #000000;
     font-size: 21px;
 }
@@ -53,5 +52,4 @@
     .toprated .topin .rht {
         width: 100%;
     }
-    
 }

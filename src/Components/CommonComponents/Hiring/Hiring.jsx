@@ -18,10 +18,10 @@ const Hiring = () => {
         <div className='ovr'>
             <div className={'hiring'}>
                 <div className="upr_part">
-                    <h1>
+                    <h2>
                         <img className='color' src={color} alt="" />
                         Flexible Hiring Options For On-Demand IT Staff Augmentations
-                    </h1>
+                    </h2>
                 </div>
                 <div className="lwr_btns">
                     <button onClick={fullTime} className='lft_btn'>

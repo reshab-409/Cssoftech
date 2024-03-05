@@ -1,16 +1,17 @@
-import React, { useEffect, useRef } from 'react';
+import React, { Suspense, useEffect, useRef } from 'react';
 import Banner from './Banner';
-import Client from './Client';
 import Quote from '../CommonComponents/Quote';
-import IndustryExperiances from './IndustryExperiances';
-import OurServices from './OurServices';
-import WhyChoose from './WhyChoose';
 import buisness from '../assets/business-concept.jpg';
 import website from '../assets/website-development.jpg';
-import Feedback from '../CommonComponents/Feedback';
 import PopUpForm from '../CommonComponents/PopUpForm/PopUpForm';
+import { Triangle } from 'react-loader-spinner';
+const Client = React.lazy(() => import('./Client'));
+const OurServices = React.lazy(() => import('./OurServices'));
+const WhyChoose = React.lazy(() => import('./WhyChoose'));
+const IndustryExperiances = React.lazy(() => import('./IndustryExperiances'));
+const Feedback = React.lazy(() => import('../CommonComponents/Feedback'));
 
-const Home = ({ targetRef }) => {
+const Home = React.memo(({ targetRef }) => {
     const childRef = useRef(null);
 
     const popup = () => {
@@ -18,19 +19,50 @@ const Home = ({ targetRef }) => {
     };
 
     useEffect(() => {
-            window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
     }, []);
 
 
     return (
-        <div>
+        <div className='homepage'>
             <Banner />
-            <Client />
-            <OurServices />
-            
-            <div ref={targetRef}>
-                <WhyChoose />
-            </div>
+            <Suspense fallback={<Triangle
+                visible={true}
+                height="80"
+                width="80"
+                color="#002EF4"
+                ariaLabel="triangle-loading"
+                wrapperStyle={{ margin: '5rem auto' }}
+                wrapperClass=""
+            />}>
+                <Client />
+            </Suspense>
+            <Suspense fallback={<Triangle
+                visible={true}
+                height="80"
+                width="80"
+                color="#002EF4"
+                ariaLabel="triangle-loading"
+                wrapperStyle={{ margin: '5rem auto' }}
+                wrapperClass=""
+            />}>
+                <OurServices />
+            </Suspense>
+
+            <Suspense fallback={<Triangle
+                visible={true}
+                height="80"
+                width="80"
+                color="#002EF4"
+                ariaLabel="triangle-loading"
+                wrapperStyle={{ margin: '5rem auto' }}
+                wrapperClass=""
+            />}>
+                <div ref={targetRef}>
+                    <WhyChoose />
+                </div>
+            </Suspense>
+
 
             <section className="section schedule">
                 <div className="container">
@@ -55,7 +87,17 @@ const Home = ({ targetRef }) => {
                     </div>
                 </div>
             </section>
-            <IndustryExperiances />
+            <Suspense fallback={<Triangle
+                visible={true}
+                height="80"
+                width="80"
+                color="#002EF4"
+                ariaLabel="triangle-loading"
+                wrapperStyle={{ margin: '5rem auto' }}
+                wrapperClass=""
+            />}>
+                <IndustryExperiances />
+            </Suspense>
             <section className="section grey-bg case-studies">
                 <div className="container">
                     <div className="case-studies-header">
@@ -113,12 +155,21 @@ const Home = ({ targetRef }) => {
                     </div>
                 </div>
             </section>
-            <Feedback heading={true} />
+            <Suspense fallback={<Triangle
+                visible={true}
+                height="80"
+                width="80"
+                color="#002EF4"
+                ariaLabel="triangle-loading"
+                wrapperStyle={{ margin: '5rem auto' }}
+                wrapperClass=""
+            />}>
+                <Feedback heading={true} />
+            </Suspense>
             <Quote />
             <PopUpForm ModalFunction={childRef} />
         </div>
     )
-}
+});
 
 export default Home;
-

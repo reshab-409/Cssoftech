@@ -13,12 +13,12 @@
     flex-direction: column;
 }
 
-.cs_dev_service .upr h1 {
+.cs_dev_service .upr h2 {
     font-size: 35px;
     color: #4719AA;
 }
 
-.cs_dev_service .upr p {
+.cs_dev_service .upr h3 {
     font-size: 20px;
     align-self: center;
     color: #000000;
@@ -66,7 +66,7 @@
     background: #FDF3F3;
 }
 
-.cs_dev_service .inr .lft .s_listing .list h1 {
+.cs_dev_service .inr .lft .s_listing .list h4 {
     font-size: 25px;
     color: #100F0F;
 }
@@ -103,7 +103,7 @@
     background: #FDF3F3;
 }
 
-.cs_dev_service .inr .lft .s_listing1 .list h1 {
+.cs_dev_service .inr .lft .s_listing1 .list h4 {
     font-size: 25px;
     color: #100F0F;
 }

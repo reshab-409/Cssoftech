@@ -5,27 +5,27 @@ import React from 'react';
 const Industries = () => {
   const Industries = [
     {
-      symbol: <span class="material-symbols-outlined">ecg_heart</span>,
+      symbol: <span className="material-symbols-outlined">ecg_heart</span>,
       name: 'Healthcare'
     },
     {
-      symbol: <span class="material-symbols-outlined">local_shipping</span>,
+      symbol: <span className="material-symbols-outlined">local_shipping</span>,
       name: 'Transport & Logistics'
     },
     {
-      symbol: <span class="material-symbols-outlined">lunch_dining</span>,
+      symbol: <span className="material-symbols-outlined">lunch_dining</span>,
       name: 'Food & Beverages'
     },
     {
-      symbol: <span class="material-symbols-outlined">school</span>,
+      symbol: <span className="material-symbols-outlined">school</span>,
       name: 'Education & E-learning'
     },
     {
-      symbol: <span class="material-symbols-outlined">shopping_bag</span>,
+      symbol: <span className="material-symbols-outlined">shopping_bag</span>,
       name: 'E-Commerce'
     },
     {
-      symbol: <span class="material-symbols-outlined"> real_estate_agent</span>,
+      symbol: <span className="material-symbols-outlined"> real_estate_agent</span>,
       name: 'Real Estate'
     }
   ]
@@ -33,7 +33,7 @@ const Industries = () => {
     <div className='industries'>
       <div className="upr">
         <img className='color' src={color} alt="" />
-        <h1>Industries We Have Served </h1>
+        <h2>Industries We Have Served </h2>
       </div>
 
       <div className="s_listing">

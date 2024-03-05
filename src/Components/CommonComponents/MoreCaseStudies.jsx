@@ -5,7 +5,7 @@ import './Style.css';
 const MoreCaseStudies = () => {
     return (
         <div className='main_sec'>
-            <h1> <img src={color} alt="color" />See our more case studies</h1>
+            <h2><img src={color} alt="color" />See our more case studies</h2>
         </div>
     );
 };

@@ -8,8 +8,8 @@ const DevelopementService = ({ Heading, SubHeading, Pic, List,className }) => {
         <div className='cs_dev_service'>
             <div className="upr">
                 <img className='color' src={color} alt="" />
-                <h1>{Heading}</h1>
-                <p>{SubHeading}</p>
+                <h2>{Heading}</h2>
+                <h3>{SubHeading}</h3>
             </div>
             <div className="inr">
                 <div className="lft">
@@ -18,7 +18,7 @@ const DevelopementService = ({ Heading, SubHeading, Pic, List,className }) => {
                             return (
                                 <div key={index} className='list'>
                                     <img className='upr1' src={data.img} alt="" />
-                                    <h1>{data.name}</h1>
+                                    <h4>{data.name}</h4>
                                     <img className='lwr1' src={underline} alt="" />
                                     <p>{data.details}</p>
                                 </div>

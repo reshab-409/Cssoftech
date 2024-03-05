@@ -9,9 +9,9 @@ const TopRated = ({ Heading, SubHeading,Pic }) => {
                 <img className='lftpic' src={Pic} alt="" />
                 <div className="rht">
                     <img className='color' src={color} alt="" />
-                    <h1>We are top - rated</h1>
-                    <p>{Heading}</p>
-                    <small>{SubHeading}</small>
+                    <h2>We are top - rated</h2>
+                    <h3>{Heading}</h3>
+                    <p>{SubHeading}</p>
                 </div>
             </div>
         </div>

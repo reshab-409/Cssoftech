@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.service_listing .inr_listing .upr_part h1 {
+.service_listing .inr_listing .upr_part h2 {
     font-size: 30px;
     color: #4719AA;
     display: flex;
@@ -31,13 +31,13 @@
 
 }
 
-.service_listing .inr_listing .upr_part h1 .color {
+.service_listing .inr_listing .upr_part h2 .color {
     max-width: 350px;
     height: 15px;
 }
 
 
-.service_listing .inr_listing .upr_part p {
+.service_listing .inr_listing .upr_part h3 {
     font-size: 20px;
     color: #000000;
 }
@@ -70,7 +70,7 @@
     background: #FDF3F3;
 }
 
-.service_listing .inr_listing .s_listing .list h1 {
+.service_listing .inr_listing .s_listing .list h3 {
     font-size: 25px;
     color: #100F0F;
 }
