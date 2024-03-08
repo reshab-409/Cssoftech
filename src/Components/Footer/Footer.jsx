@@ -5,7 +5,6 @@ import { FaWhatsapp } from "react-icons/fa6";
 import ISO from '../assets/ISO_9001-2015_w.jpg';
 import NSIC from '../assets/newNS.png';
 import logo from '../img/logo.png';
-import '../Header/Header.css';
 import { Link } from 'react-router-dom';
 
 const Footer = ({ onHeaderClick }) => {

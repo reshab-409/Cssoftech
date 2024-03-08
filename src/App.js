@@ -5,6 +5,7 @@ import CasePage from './Components/Casestudy/CasePage';
 import CasePage2 from './Components/CaseStudy2/CasePage2';
 import Home from './Components/Home/Home';
 import './Components/icon/style.css';
+import './Components/Header/Header.css';
 import SoftwearDevelopement from './Components/Softwear_developement/SoftwearDevelopement';
 import ITStaffAugmentationServicesMain from './Components/IT Staff Augmentation Services/IT Staff_Augmentation_Services';
 import WebDevelopment from './Components/Web_developement/Web_developement';
