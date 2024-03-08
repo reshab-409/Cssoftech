@@ -9,7 +9,7 @@ const Feedback = ({ heading }) => {
             <section className="section container testimonials">
                 {heading && <h2>Our Clients says</h2>}
                 {/* <div className="owl-carousel owl-theme testimonials-slider"> */}
-                <OwlCarousel className='owl-carousel owl-centered' items={1} nav={false} loop  autoplay dots>
+                <OwlCarousel className='owl-carousel owl-centered' items={1} nav={false} loop  autoplay dots={false}>
                     <div className="item">
                         <div className="testimonials-block">
                             <div className="icon-quote"></div>

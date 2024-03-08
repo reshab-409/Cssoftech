@@ -1,16 +1,18 @@
-import React, { useRef } from 'react';
+import React, { Suspense, lazy, useCallback, useRef } from 'react';
+import { Triangle } from 'react-loader-spinner';
 import { Link } from 'react-router-dom';
-import PopUpForm from '../CommonComponents/PopUpForm/PopUpForm';
+const PopUpForm = lazy(() => import('../CommonComponents/PopUpForm/PopUpForm'));
 
 const Banner = () => {
     const childRef = useRef(null);
 
-    const popup = () => {
-      childRef.current.Open();
-    };
-  
+    const popup = useCallback(() => {
+        childRef.current.Open();
+    }, [childRef]);
+
+
     return (
-        <div>
+        <div className='homepage'>
             <section className="banner">
                 <div className="container">
                     <div className="banner-content">
@@ -23,7 +25,17 @@ const Banner = () => {
                     </div>
                 </div>
             </section>
+            <Suspense fallback={<Triangle
+                visible={true}
+                height="80"
+                width="80"
+                color="#002EF4"
+                ariaLabel="triangle-loading"
+                wrapperStyle={{ margin: '5rem auto' }}
+                wrapperClass=""
+            />}>
             <PopUpForm ModalFunction={childRef} />
+            </Suspense>
         </div>
     );
 };

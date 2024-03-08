@@ -16,7 +16,7 @@ const IndustryExperiances = () => {
                     </p>
                 </div>
                 <div className="mt">
-                    <OwlCarousel className='owl-carousel owl-centered' items={5} loop nav={false} autoplay responsive={{
+                    <OwlCarousel className='owl-carousel owl-centered' items={5} loop nav={false} autoplay dots={false} responsive={{
                         0: { items: 2 },
                         600: { items: 2 },
                         768: { items: 3 },
@@ -29,7 +29,7 @@ const IndustryExperiances = () => {
                                 <span className="material-symbols-outlined">
                                     lunch_dining
                                 </span>
-                                <h5>Food & Beverages</h5>
+                                <h3>Food & Beverages</h3>
                             </div>
                         </div>
                         <div className="item">
@@ -38,7 +38,7 @@ const IndustryExperiances = () => {
                                 <span className="material-symbols-outlined">
                                     shopping_bag
                                 </span>
-                                <h5>Retail & E-Commerce</h5>
+                                <h3>Retail & E-Commerce</h3>
                             </div>
                         </div>
                         <div className="item">
@@ -47,7 +47,7 @@ const IndustryExperiances = () => {
                                 <span className="material-symbols-outlined">
                                     local_shipping
                                 </span>
-                                <h5>Logistics & Transportation</h5>
+                                <h3>Logistics & Transportation</h3>
                             </div>
                         </div>
                         <div className="item">
@@ -56,7 +56,7 @@ const IndustryExperiances = () => {
                                 <span className="material-symbols-outlined">
                                     ecg_heart
                                 </span>
-                                <h5>Health Care</h5>
+                                <h3>Health Care</h3>
                             </div>
                         </div>
                         <div className="item">
@@ -65,7 +65,7 @@ const IndustryExperiances = () => {
                                 <span className="material-symbols-outlined">
                                     school
                                 </span>
-                                <h5>Educaton & E-Learning</h5>
+                                <h3>Educaton & E-Learning</h3>
                             </div>
                         </div>
                         <div className="item">
@@ -74,7 +74,7 @@ const IndustryExperiances = () => {
                                 <span className="material-symbols-outlined">
                                     real_estate_agent
                                 </span>
-                                <h5>Real Estate</h5>
+                                <h3>Real Estate</h3>
                             </div>
                         </div>
                     </OwlCarousel>

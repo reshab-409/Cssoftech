@@ -13,7 +13,7 @@ const OurServices = () => {
                     development
                 </h2>
                 <div className="gap">
-                    <OwlCarousel className='owl-carousel owl-centered' items={5} nav={false} loop autoplay dots responsive={{
+                    <OwlCarousel className='owl-carousel owl-centered' items={5} nav={false} loop autoplay dots={false} responsive={{
                         0: { items: 2 },
                         600: { items: 2 },
                         768: { items: 3 },
@@ -23,91 +23,91 @@ const OurServices = () => {
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-web-development"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Web Development</h5>
+                                <h3>Web Development</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-web-design"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Web Design</h5>
+                                <h3>Web Design</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-ui-ux"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>App UI UX</h5>
+                                <h3>App UI UX</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-qa"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Testing & QA</h5>
+                                <h3>Testing & QA</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-data-services"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Data Services</h5>
+                                <h3>Data Services</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-web-development"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Web Development</h5>
+                                <h3>Web Development</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-web-design"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Web Design</h5>
+                                <h3>Web Design</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-ui-ux"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>App UI UX</h5>
+                                <h3>App UI UX</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-qa"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Testing & QA</h5>
+                                <h3>Testing & QA</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-data-services"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Data Services</h5>
+                                <h3>Data Services</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-web-development"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Web Development</h5>
+                                <h3>Web Development</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-web-design"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Web Design</h5>
+                                <h3>Web Design</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-ui-ux"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>App UI UX</h5>
+                                <h3>App UI UX</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-qa"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Testing & QA</h5>
+                                <h3>Testing & QA</h3>
                             </div>
                         </div>
                         <div className="item">
                             <div className="services-item">
                                 <span className="icon-data-services"><span className="path1"></span><span className="path2"></span></span>
-                                <h5>Data Services</h5>
+                                <h3>Data Services</h3>
                             </div>
                         </div>
                     </OwlCarousel>

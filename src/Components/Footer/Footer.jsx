@@ -21,7 +21,7 @@ const Footer = ({ onHeaderClick }) => {
             <div className="container">
                 <div className="footer-block-container">
                     <div className="footer-block">
-                        <h4>Company</h4>
+                        <h2>Company</h2>
                         <div className="toggle-menu">
                             <Link to='/' onClick={handleLinkClick}>Why Choose Us?</Link>
                             <Link>Certifications</Link>
@@ -29,7 +29,7 @@ const Footer = ({ onHeaderClick }) => {
                         </div>
                     </div>
                     <div className="footer-block">
-                        <h4>Our Services</h4>
+                        <h2>Our Services</h2>
                         <div className="toggle-menu">
                             <Link to='/web-development'>Web Design & Development</Link>
                             <Link to='/mobile-development'>Mobile Application Development</Link>
@@ -41,7 +41,7 @@ const Footer = ({ onHeaderClick }) => {
                         </div>
                     </div>
                     <div className="footer-block">
-                        <h4>Industries</h4>
+                        <h2>Industries</h2>
                         <div className="toggle-menu">
                             <Link to='/healthcare'>Health Care</Link>
                             <Link to='/food-beverages'>Food & Beverages</Link>
@@ -52,13 +52,12 @@ const Footer = ({ onHeaderClick }) => {
                         </div>
                     </div>
                     <div className="footer-block">
-                        <h4>Contact Us</h4>
+                        <h2>Contact Us</h2>
                         <div className="toggle-menu">
                             <address>5 Sreema road, Dum dum cantonment, kolkata, India</address>
                             <a href="mailto:info@cssoftech.com">info@cssoftech.com</a>
                             <a href="tel:+91 7003990798">Call - +91 7003990798</a>
-                            <a aria-label="Chat on WhatsApp" href="https://wa.me/7003990798"><FaWhatsapp /> - Chat on WhatsApp</a>
-                            <a />
+                            <a href="https://wa.me/7003990798"><FaWhatsapp /> - Chat on WhatsApp</a>
                         </div>
                     </div>
                 </div>
@@ -67,15 +66,15 @@ const Footer = ({ onHeaderClick }) => {
                     <img className='partner-logo' src={ISO} alt="ISO" />
                 </div>
                 <div className="footer-bottom">
-                    <Link to='/'><img className='btm_ftr_logo' src={logo} alt="" /></Link>
+                    <Link aria-label="logo" to='/'><img className='btm_ftr_logo' src={logo} alt="" /></Link>
                     <div className="get-touch">
                         <div>Get in touch</div>
                         <div className="social">
-                            <a href="https://www.facebook.com/Creationsoul"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="https://www.linkedin.com/company/97397466/admin/feed/posts"><FaLinkedinIn /></a>
-                            <a href="#"><FaYoutube /></a>
-                            <a href="#"><FaInstagram /></a>
+                            <a aria-label="Facebook" href="https://www.facebook.com/Creationsoul"><FaFacebookF /></a>
+                            <a aria-label="Twitter" href="#"><FaXTwitter /></a>
+                            <a aria-label="LinkedIn" href="https://www.linkedin.com/company/97397466/admin/feed/posts"><FaLinkedinIn /></a>
+                            <a aria-label="Youtube" href="#"><FaYoutube /></a>
+                            <a aria-label="Instagram" href="#"><FaInstagram /></a>
                         </div>
                     </div>
                     <div className="copyright">

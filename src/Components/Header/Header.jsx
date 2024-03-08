@@ -106,19 +106,19 @@ const Header = ({ onHeaderClick }) => {
       <div className="container">
         <div className="wrapper">
           <div className="header-item-left">
-            <h1><Link to='/' rel="preload" className="brand">
+          <Link aria-label="logo" to='/' rel="preload" className="brand">
               <img src={logo} alt="" />
-            </Link></h1>
+            </Link>
           </div>
           {/* <!-- Section: Navbar Menu --> */}
           <div className="header-item-center">
             <div className="overlay"></div>
             <nav className="menu">
               <div className="menu-mobile-header">
-                <button type="button" className="menu-mobile-arrow"><i className="bi bi-arrow-left"></i></button>
+                <button aria-label="menu-arrow" type="button" className="menu-mobile-arrow"><i className="bi bi-arrow-left"></i></button>
                 <div className="menu-mobile-title">
                 </div>
-                <button type="button" className="menu-mobile-close"><i className="bi bi-x"></i></button>
+                <button aria-label="menu-close" type="button" className="menu-mobile-close"><i className="bi bi-x"></i></button>
               </div>
               <ul className="menu-section">
                 <li onClick={menuClosedClick}> <Link to='/' rel="preload">Home </Link></li>
@@ -252,7 +252,7 @@ const Header = ({ onHeaderClick }) => {
 
           <div className="header-item-right">
             <Link to='/contactUs' rel="preload" className="login">Contact Us</Link>
-            <button type="button" className="menu-mobile-trigger">
+            <button aria-label="menu-trigger" type="button" className="menu-mobile-trigger">
               <span></span>
               <span></span>
               <span></span>

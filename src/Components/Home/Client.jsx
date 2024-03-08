@@ -8,6 +8,7 @@ import Sddm from '../assets/south-dum-dum.png';
 import grse from '../assets/GRSE.png';
 import housing from '../assets/Housing.png';
 import lackland from '../assets/Lackland-dorm.png';
+import mJunction from '../assets/mjunction_logo.png'
 import MAZAGONDOCK from '../assets/MAZAGONDOCK.png';
 import mySeema from '../assets/MY-SEEMA.png';
 import './Style.css';
@@ -17,17 +18,17 @@ const Client = () => {
     return (
         <section className="section client">
             <div className="container">
-                <h5>Some of our valuable clients</h5>
+                <h2>Some of our valuable clients</h2>
                 <div className="client_stack">
                     {/*  */}
                     <div className="item1"><img src={grse} alt="" /></div>
                     <div className="item1"><img src={MAZAGONDOCK} alt="" /></div>
                     <div className="item1"><img src={Sddm} alt="" /></div>
+                    <div className="item1"><img src={mJunction} alt="" /></div>
                     <div className="item1"><img src={mySeema} alt="" /></div>
                     <div className="item1"><img src={housing} alt="" /></div>
                     <div className="item1"> <img src={lackland} alt="" /></div>
                     {/*  */}
-                    <div className="item1"><img src={aven} alt="" /></div>
                     <div className="item1"><img src={hexa} alt="" /></div>
                     <div className="item1"><img src={aven} alt="" /></div>
                     <div className="item1"> <img src={light} alt="" /></div>

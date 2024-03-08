@@ -13728,8 +13728,8 @@ a {
   }
 }
 
-.footer h4,
-.footer .h4 {
+.footer h2,
+.footer .h2 {
   color: #899BBE;
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -13989,8 +13989,8 @@ body {
   text-align: center;
 }
 
-.client h5,
-.client .h5 {
+.client h2,
+.client .h2 {
   font-size: calc(1.275rem + 0.3vw);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -13999,8 +13999,8 @@ body {
 
 @media (min-width: 1200px) {
 
-  .client h5,
-  .client .h5 {
+  .client h2,
+  .client .h2 {
     font-size: 1.5rem;
   }
 }
@@ -14133,8 +14133,8 @@ body {
   }
 }
 
-.service .services-item h5,
-.service .services-item .h5 {
+.service .services-item h3,
+.service .services-item .h3 {
   font-size: calc(1.255rem + 0.06vw);
   color: #555555;
   margin-top: 1rem;
@@ -14142,16 +14142,16 @@ body {
 
 @media (min-width: 1200px) {
 
-  .service .services-item h5,
-  .service .services-item .h5 {
+  .service .services-item h3,
+  .service .services-item .h3 {
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 767.98px) {
 
-  .service .services-item h5,
-  .service .services-item .h5 {
+  .service .services-item h3,
+  .service .services-item .h3 {
     font-size: 1rem;
   }
 }
@@ -14541,8 +14541,8 @@ body {
   align-items: center;
 }
 
-.schedule-block .item h5,
-.schedule-block .item .h5 {
+.schedule-block .item h2,
+.schedule-block .item .h2 {
   font-family: "Roboto";
   font-size: calc(1.275rem + 0.3vw);
   font-weight: 300;
@@ -14551,8 +14551,8 @@ body {
 
 @media (min-width: 1200px) {
 
-  .schedule-block .item h5,
-  .schedule-block .item .h5 {
+  .schedule-block .item h2,
+  .schedule-block .item .h2 {
     font-size: 1.5rem;
   }
 }
@@ -14660,8 +14660,8 @@ body {
   }
 }
 
-.experience-item h5,
-.experience-item .h5 {
+.experience-item h3,
+.experience-item .h3 {
   font-size: 1.15rem;
   margin: 1.3rem 0 0 0;
 }
@@ -14703,8 +14703,8 @@ body {
   text-align: center;
 }
 
-.case-studies-header h5,
-.case-studies-header .h5 {
+.case-studies-header h2,
+.case-studies-header .h2 {
   font-size: calc(1.255rem + 0.06vw);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -14714,14 +14714,14 @@ body {
 
 @media (min-width: 1200px) {
 
-  .case-studies-header h5,
-  .case-studies-header .h5 {
+  .case-studies-header h2,
+  .case-studies-header .h2 {
     font-size: 1.3rem;
   }
 }
 
-.case-studies-header h2,
-.case-studies-header .h2 {
+.case-studies-header h3,
+.case-studies-header .h3 {
   font-size: calc(1.355rem + 1.26vw);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -14732,14 +14732,14 @@ body {
 
 @media (min-width: 1200px) {
 
-  .case-studies-header h2,
-  .case-studies-header .h2 {
+  .case-studies-header h3,
+  .case-studies-header .h3 {
     font-size: 2.3rem;
   }
 }
 
-.case-studies-block-header h3,
-.case-studies-block-header .h3 {
+.case-studies-block-header h4,
+.case-studies-block-header .h4 {
   font-size: calc(1.325rem + 0.9vw);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -14749,8 +14749,8 @@ body {
 
 @media (min-width: 1200px) {
 
-  .case-studies-block-header h3,
-  .case-studies-block-header .h3 {
+  .case-studies-block-header h4,
+  .case-studies-block-header .h4 {
     font-size: 2rem;
   }
 }

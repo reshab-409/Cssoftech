@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
-
-
 .banner_it1 {
     width: 100%;
     min-height: 400px;
@@ -11,14 +9,12 @@
     overflow: hidden;
     position: relative;
 }
-
 .banner_it1 .upr {
     width: 90%;
     max-width: 1320px;
     display: flex;
     margin: auto;
 }
-
 .banner_it1 .upr .bnrimg {
     object-fit: contain;
     aspect-ratio: 6/5;
@@ -27,14 +23,12 @@
     filter: invert(8%) grayscale(80%);
     margin: 1rem 0 5rem 0;
 }
-
 .banner_it1 .upr .color {
     object-fit: contain;
     aspect-ratio: 6/5;
     width: 40%;
     margin: 1rem 0 5rem 0;
 }
-
 .banner_it1 .upr .txt {
     display: flex;
     justify-content: center;
@@ -42,7 +36,6 @@
     padding: 1rem;
     flex-direction: column;
 }
-
 .banner_it1 .upr .txt h1 {
     color: #FFF;
     font-size: 52.5px;
@@ -52,7 +45,6 @@
     line-height: normal;
     letter-spacing: 2.625px;
 }
-
 .banner_it1 .upr .txt h2 {
     font-family: 'Inter', sans-serif;
     color: #FFF;
@@ -61,11 +53,9 @@
     font-weight: 500;
     line-height: 157%;
 }
-
 .banner_it1 .upr .txt h2 span {
     color: #79E7FF;
 }
-
 .banner_it1 .cross {
     position: absolute;
     rotate: 2deg;
@@ -76,7 +66,6 @@
     bottom: 0;
     margin: auto;
 }
-
 .banner_it1 .cross1 {
     position: absolute;
     rotate: -2deg;
@@ -86,7 +75,6 @@
     max-width: 3400px;
     bottom: 0;
 }
-
 .banner_it1 .numbering {
     position: absolute;
     width: 85%;
@@ -99,143 +87,114 @@
     bottom: 0;
     padding: 1rem 0;
 }
-
 .banner_it1 .numbering .num {
     display: flex;
     gap: .4rem;
     align-items: flex-end;
     justify-content: center;
 }
-
 .banner_it1 .numbering .num:last-child {
     display: flex;
     gap: .4rem;
     align-items: flex-end;
     justify-content: flex-end;
 }
-
 .banner_it1 .numbering .num .numin {
     height: 50px;
     margin-bottom: 1.5rem;
 }
-
 .banner_it1 .numbering .num h3 {
     font-size: 15px;
     color: #FAFAFA;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
 }
-
 @media screen and (max-width:1250px) {
     .banner_it1 .upr {
         width: 90%;
         margin: 0 auto 4rem;
     }
 }
-
 @media screen and (max-width:1187px) {
     .banner_it1 .upr {
         width: 90%;
         margin: 0 auto 7rem;
     }
 }
-
 @media screen and (max-width:1047px) {
     .banner_it1 .cross {
         height: 230px;
     }
-
     .banner_it1 .cross1 {
         height: 230px;
     }
-
     .banner_it1 .upr {
         width: 90%;
         margin: 0 auto 12rem;
     }
-
 }
-
 @media screen and (max-width:965px) {
     .banner_it1 .upr {
         display: flex;
         flex-direction: column;
     }
-
     .banner_it1 .upr .color {
         width: 70%;
     }
-
     .banner_it1 .upr .txt {
         padding: 2rem;
         width: 100%;
         word-wrap: break-word;
     }
-
     .banner_it1 .upr .txt {
         width: 95%;
     }
-
     .banner_it1 .upr .bnrimg {
         height: auto;
         margin: auto;
         width: fit-content;
-        /* margin: 1rem 0 5rem 0; */
         margin-bottom: 5rem;
     }
-
     .banner_it1 .upr .txt h1 {
         font-size: 50px;
     }
-
 }
-
 @media screen and (max-width:553px) {
     .banner_it1 .upr .bnrimg {
         height: auto;
     }
-
     .banner_it1 .upr .txt h1 {
         font-size: calc(1.625rem + 3.5vw);
     }
-
     .banner_it1 .upr .txt h2 {
         font-size: calc(1.265rem + 0.18vw);
     }
-
     .banner_it1 .upr .txt {
         width: 100%;
         padding: 0;
         margin-top: 1rem;
     }
-
     .banner_it1 .upr .color {
         width: 100%;
     }
-
 }
-
 @media screen and (max-width:505px) {
     .banner_it1 .cross {
         height: 420px;
     }
-
     .banner_it1 .cross1 {
         height: 420px;
     }
-
     .banner_it1 .upr {
         width: 90%;
         margin: 0 auto 19rem;
     }
-
     .banner_it1 .numbering .num {
         display: flex;
         gap: .4rem;
         align-items: flex-end;
         justify-content: flex-start;
     }
-
     .banner_it1 .numbering .num:last-child {
         display: flex;
         gap: .4rem;

@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef } from 'react';
+import React, { Suspense, useCallback, useEffect, useRef } from 'react';
 import Banner from './Banner';
 import Quote from '../CommonComponents/Quote';
 import buisness from '../assets/business-concept.jpg';
@@ -14,9 +14,10 @@ const Feedback = React.lazy(() => import('../CommonComponents/Feedback'));
 const Home = React.memo(({ targetRef }) => {
     const childRef = useRef(null);
 
-    const popup = () => {
+    const popup = useCallback(() => {
         childRef.current.Open();
-    };
+     }, [childRef]);
+     
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -69,17 +70,17 @@ const Home = React.memo(({ targetRef }) => {
                     <div className="schedule-block">
                         <div className="item">
                             <span className="icon-access"></span>
-                            <h5>
+                            <h2>
                                 Accelerating<br />
                                 first-to-market access
-                            </h5>
+                            </h2>
                         </div>
                         <div className="item">
                             <span className="icon-access"></span>
-                            <h5>
+                            <h2>
                                 Accelerating<br />
                                 first-to-market access
-                            </h5>
+                            </h2>
                         </div>
                         <div>
                             <button onClick={popup} className="button-primary bg-reverse">Let's Talk</button>
@@ -101,19 +102,19 @@ const Home = React.memo(({ targetRef }) => {
             <section className="section grey-bg case-studies">
                 <div className="container">
                     <div className="case-studies-header">
-                        <h5>Case Studies</h5>
-                        <h2>
+                        <h2>Case Studies</h2>
+                        <h3>
                             Through these articles, we also share our latest thinking, ideas,
                             and perspectives
-                        </h2>
+                        </h3>
                     </div>
                     <div className="row align-items-center case-studies-block">
                         <div className="col-md-5">
                             <div className="case-studies-block-header">
-                                <h3>
+                                <h4>
                                     Mobile Product Strategy, UX and Service Design for a
                                     Multinational Fortune 50 Media Company
-                                </h3>
+                                </h4>
                                 <p>
                                     Define, design, prototype and test a new mobile device and
                                     service that will disrupt an already-crowded market
@@ -141,10 +142,10 @@ const Home = React.memo(({ targetRef }) => {
                         <div className="col-md-1"></div>
                         <div className="col-md-5">
                             <div className="case-studies-block-header">
-                                <h3>
+                                <h4>
                                     The Formula to Increase Sales Qualified Leads on Your Enterprise
                                     Website
-                                </h3>
+                                </h4>
                                 <p>
                                     DDefine, design, prototype and test a new mobile device and
                                     service that will disrupt an already-crowded market
