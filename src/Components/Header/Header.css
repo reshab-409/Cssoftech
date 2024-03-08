@@ -14075,7 +14075,7 @@ body {
 }
 
 .service .services-item:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
 @media (max-width: 767.98px) {
@@ -14602,7 +14602,7 @@ body {
 }
 
 .experience-item:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
 .experience-item span {

@@ -60,7 +60,7 @@
 }
 
 .service_listing .inr_listing .s_listing .list:hover {
-    scale: 1.05;
+    transform: scale(1.05);
 }
 
 .service_listing .inr_listing .s_listing .list .upr1 {

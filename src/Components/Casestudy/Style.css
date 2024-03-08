@@ -143,7 +143,7 @@
   }
 
   .projects .main:hover {
-      scale: 1.05;
+    transform: scale(1.05);
   }
 
   .projects .main .details .b {

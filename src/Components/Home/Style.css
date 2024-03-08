@@ -41,7 +41,7 @@
 }
 
 .client_stack .item1:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
 .client_stack .item1 img {
