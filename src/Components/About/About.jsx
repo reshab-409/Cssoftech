@@ -37,12 +37,13 @@ const About = () => {
             <section className="service-details">
                 <div className="container">
                     <h3 className="title">Choose from leading shipping and payment providers to find your best fit solutions, without penalties</h3>
-                    <p>Need something changed or is there something not quite working the way you envisaged? Is your van a little old and tired and need refreshing?
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    <p>Welcome to CreationSoul, your premier destination for innovative web development solutions. We take pride in extending our services to customers not only across India but across the globe. As a leading software development company, we play a leading role in providing end-to-end services including design, development, testing, deployment and digital marketing.
                     </p>
                     <p>
-                        Need something changed or is there something not quite working the way you envisaged? Is your van a little old and tired and need refreshing? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    Since our inception, we have been dedicated to empowering entrepreneurs by leveraging our expertise to solve their most pressing challenges. Our mission is to contribute to the creation of a better software ecosystem, which fosters innovation and enables individuals to realize their aspirations. We help our clients unlock new potential and seize growth opportunities.</p>
+                    <p>
+                    Whether a new business or an established business, CreationSoul is your trusted partner to navigate the ever-evolving digital landscape. Join us as we embark on a journey to build a better world through technology.
+                    </p>
                 </div>
             </section>
 

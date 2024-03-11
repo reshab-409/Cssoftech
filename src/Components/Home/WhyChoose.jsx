@@ -41,7 +41,7 @@ const WhyChoose = () => {
                         </div>
                         <div className="col-md-12 col-lg-7">
                             <h2>Why choose Creationsoul</h2>
-                            <p>Some of the worlds best companies have chosen to work with</p>
+                            <p>Comprehensive Services: We offer end-to-end solutions for your digital needs. We provide all services from conceptualizing and designing your website.</p>
                             <div className="why-choose-item">
                                 <div className="why-choose-item-block">
                                     <h2>{shouldRender && <CountUp duration={5} className="counter" end={10} />}</h2>
