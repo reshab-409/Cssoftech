@@ -33,15 +33,21 @@ const Header = ({ onHeaderClick }) => {
   };
 
   const toggleMenu = () => {
-    setMenuActive(!isMenuActive);
-    const updatedMenu = document.querySelector('.menu');
-    const updatedMenuOverlay = document.querySelector('.overlay');
+  const updatedMenu = document.querySelector('.menu');
+  const updatedMenuOverlay = document.querySelector('.overlay');
 
-    if (updatedMenu && updatedMenuOverlay) {
-      updatedMenu.classList.toggle('active');
-      updatedMenuOverlay.classList.toggle('active');
-    }
-  };
+  // Close the submenu if it's open
+  if (isMenuActive && subMenu) {
+    hideSubMenu();
+  }
+
+  setMenuActive(!isMenuActive);
+
+  if (updatedMenu && updatedMenuOverlay) {
+    updatedMenu.classList.toggle('active');
+    updatedMenuOverlay.classList.toggle('active');
+  }
+};
 
 
   const showSubMenu = (hasChildren) => {
